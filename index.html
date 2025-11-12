@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>怪喵科技 | GuaiTech</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #121212;
+        }
+
+        /* 导航栏样式 */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(30, 30, 30, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #b3b3b3;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Hero Section (背景 + Slogan) */
+        .hero {
+            height: 100vh;
+            /*background: url('./banner.png') no-repeat center center fixed;*/
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+        }
+
+        .slogan h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #ffffff, #aeaeae);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .slogan p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            opacity: 0.9;
+        }
+
+        /* 关于部分 */
+        .about {
+            padding: 4rem 2rem;
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+
+        .about h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #ffffff;
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .about-text p {
+            color: #b3b3b3;
+        }
+
+        /*
+        .about-image {
+            flex: 1;
+            height: 300px;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #999;
+            font-style: italic;
+        }*/
+
+        /* 页脚容器 */
+        .footer {
+            padding: 4rem 2rem;
+            background-color: #1e1e1e;
+        }
+
+        /* 页脚内容容器 */
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        /* 单个栏目 */
+        .footer-column {
+            flex: 1 1 200px;
+        }
+
+        /* 栏目标题 */
+        .footer-column h3 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            opacity: 0.8;
+            font-weight: 600;
+        }
+
+        /* 栏目内的链接列表 */
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-column a {
+            text-decoration: none;
+            color: #b3b3b3;
+            transition: color 0.3s ease;
+        }
+
+        .footer-column a:hover {
+            color: #ffffff;
+        }
+
+        /* 底部版权信息 */
+        .footer-bottom {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #333;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 导航栏 -->
+<nav>
+    <div class="logo">GuaiTech</div>
+    <ul class="nav-links">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#about">关于</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section (背景 + Slogan) -->
+<section class="hero" id="home">
+    <div class="slogan">
+        <h1>Tech Inspires</h1>
+    </div>
+</section>
+
+<!-- 关于部分 -->
+<section class="about" id="about">
+    <h2>关于我们</h2>
+    <div class="about-content">
+        <div class="about-text">
+            <h3>我们是谁</h3>
+            <p>GuaiTech是一个非盈利的组织，由互联网志愿者们组成，同时提供了群组游戏等多种生态项目，旨在改善互联网生态体验。</p>
+        </div>
+        <div class="about-image">
+            <img src="./gz.png" alt="awa" width="400" height="400">
+        </div>
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>开源</h3>
+            <ul>
+                <li><a href="https://github.com/GuaiTech" target="_blank" rel="noopener noreferrer">GitHub 仓库</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">USTG 开源镜像站</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">GitSpire</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>知识库/资源</h3>
+            <ul>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">GuaiTech 技术博客</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">喵科大 USTG</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">GuaiTech Arpa Network</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>生态</h3>
+            <ul>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">怪喵云盘</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">柘龙云端</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Aqua Gaming</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">MeoAuth</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>产品</h3>
+            <ul>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Solitude</a></li>
+                </br>
+                <h3>项目</h3>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Rillsy AI</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>参与</h3>
+            <ul>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">GuaiTech 新春企划番</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2023-2025 GuaiTech. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
